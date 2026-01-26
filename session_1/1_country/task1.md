@@ -15,3 +15,24 @@
 ## Diagram
 
 ![Database diagram of the Countries table.](database_diagram.png)
+
+#1
+SELECT Country FROM countries;
+#2
+SELECT Country, Population FROM countries;
+#3
+SELECT Country FROM countries WHERE Continent="Europe";
+#4
+SELECT Country FROM countries WHERE Population > 100,000,000;
+#5
+SELECT Country FROM countries WHERE Continent="Asia" AND GDPPerCapita > 20,000;
+#6
+Select Country FROM countries WHERE LiteracyPercent < 70;
+#7
+SELECT Country FROM countries WHERE CoastlineRatio = 0;
+#8
+SELECT Country FROM countries WHERE Country LIKE 'A%';
+#9
+SELECT Country FROM countries WHERE Country LIKE '%United' OR 'United%';
+#10
+SELECT Country FROM countries WHERE Birthrate > Deathrate AND Population > 50,000,000

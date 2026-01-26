@@ -16,3 +16,9 @@
 ## Diagram
 
 ![Database diagram of the Countries table](database_diagram.png)
+
+
+#1
+SELECT Country FROM countries ORDER BY Population ASC LIMIT 10;
+#2
+SELECT Country FROM countries ORDER BY AreaSqMi DES LIMIT 10;
