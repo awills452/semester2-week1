@@ -21,4 +21,4 @@
 #1
 SELECT Country FROM countries ORDER BY Population ASC LIMIT 10;
 #2
-SELECT Country FROM countries ORDER BY AreaSqMi DES LIMIT 10;
+SELECT Country FROM countries ORDER BY AreaSqMi DES LIMIT 5;
