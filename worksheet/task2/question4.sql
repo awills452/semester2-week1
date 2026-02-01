@@ -2,7 +2,13 @@
 -- Expected Columns:
 -- StudentId, FirstName, LastName, CourseName
 
-SELECT s.StudentId, s.FirstName, s.LastName, c.CourseName
+SELECT
+    s.StudentId,
+    s.FirstName,
+    s.LastName,
+    c.CourseName
 FROM Student s
-INNER JOIN Enrolment e ON s.StudentId = e.StudentId
-INNER JOIN Course c ON e.CourseId = c.Courseld;
+JOIN Enrollment e
+    ON s.StudentId = e.StudentId
+JOIN Course c
+    ON e.CourseId = c.CourseId;
