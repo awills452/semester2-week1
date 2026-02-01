@@ -8,7 +8,8 @@ SELECT
     s.LastName,
     c.CourseName
 FROM Student s
-JOIN Enrollment e
+JOIN Enrolment e
     ON s.StudentId = e.StudentId
 JOIN Course c
     ON e.CourseId = c.CourseId;
+
